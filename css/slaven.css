@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,700&display=swap');
+
 /* Document */
 
 *, *::after, *::before {
@@ -10,17 +12,28 @@
 
 body {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: 'Oswald', sans-serif;
 }
 
-.outer-div {
-  background-image: url('../images/slika1.jpg');
+.slika-pozadine {
+  background-image: url('../images/space2.jpg');
   background-size: cover;
   background-attachment: fixed;
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 100vh;
+  /* background-position: center; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.8;
+  z-index:-2;
+  position: absolute;
+}
+
+.outer-div {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  height: 150vh;
 }
 
 .container {
@@ -35,7 +48,7 @@ body {
   margin-bottom: 1rem;
   height: 8vh;
   width: 100%;
-  background-color: rgb(0, 139, 139);
+  background-color: rgba(1, 6, 75, 0.59);
   transition: all 200ms ease;
 }
 
@@ -92,7 +105,11 @@ nav li:hover a {
   margin-top: 0;
   font-size: 2.5rem;
   height: 100%;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Lato';
+  font-style: italic;
 }
 
 /* Naslovna/Home */
@@ -102,15 +119,19 @@ nav li:hover a {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  font-family: 'Lato';
+  font-style: italic;
 }
 
 .moja-poruka {
   text-align: center;
   margin-bottom: 0.5rem;
+  color: white;
+  /* font-weight: 800; */
 }
 
 .naslovna a {
-  color: black;
+  color: beige;
   text-decoration: none;
   font-weight: 600;
   font-style: italic;
@@ -121,8 +142,9 @@ nav li:hover a {
 }
 
 .naslovna a:hover {
-  color: rgb(65, 105, 225);
+  color: rgb(1, 212, 160);
   font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 
@@ -198,7 +220,7 @@ h3 {
 
 .projekti {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 10px;
 }
 
