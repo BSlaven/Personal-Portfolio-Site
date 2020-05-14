@@ -100,6 +100,14 @@ nav li:hover a {
   cursor: pointer;
 }
 
+.priprema {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
 /* Ime/Name */
 .moje-ime {
   margin-top: 0;
