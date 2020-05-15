@@ -40,10 +40,7 @@ body {
 }
 
 .outer-div {
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
   height: 150vh;
-  /* padding-top: 5rem; */
 }
 
 .container {
@@ -109,6 +106,7 @@ nav li:hover a {
   display: none;
   font-size: 1.2rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .priprema {
@@ -123,7 +121,7 @@ nav li:hover a {
 /* Ime/Name */
 .moje-ime {
   margin-top: 0;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   height: 100%;
   margin-bottom: 3.5rem;
   color: #fff;
@@ -147,7 +145,6 @@ nav li:hover a {
   text-align: center;
   margin-bottom: 0.5rem;
   color: white;
-  /* padding-top: 5rem; */
 }
 
 .naslovna a {
@@ -187,12 +184,23 @@ h3 {
   margin-bottom: 1rem;
 }
 
+/* About / O meni */
+.o-meni {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.o-meni h3 {
+  font-size: 1.8rem;
+}
 
 /* Kontakt */
 
 .tekst-za-kontakt {
   text-transform: uppercase;
   margin-bottom: 0;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .lista-kontakata {
@@ -202,17 +210,18 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #fff;
 }
 
 .lista-kontakata li {
   margin-bottom: 2.5rem;
-  color: #111;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 600;
   align-self: flex-start;
   width: 100%;
+  font-size: 1.4rem;
 }
 
 .lista-kontakata li p {
@@ -226,7 +235,7 @@ h3 {
 .lista-kontakata li a {
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: rgb(160, 160, 160);
   cursor: pointer;
   transition: all 200ms ease;
 }
@@ -245,25 +254,32 @@ h3 {
 }
 
 .naziv-projekti {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  color: beige;
+}
+
+.naziv-projekta {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .projekat {
-  border: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .projekat a {
   text-decoration: none;
-  color: #333;
+  color: rgb(160, 160, 160);
   font-weight: 600;
   transition: all 100ms ease;
 }
 
 .projekat a:hover {
-  font-size: 1.05rem;
+  letter-spacing: 1px;
 }
 
 
@@ -318,5 +334,11 @@ h3 {
 
   .moje-ime {
     font-size: 1.5rem;
+  }
+
+  .projekti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 10px;
   }
 }
