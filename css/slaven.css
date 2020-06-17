@@ -12,15 +12,14 @@
 
 body {
   position: relative;
-  /* height: 100vh; */
   font-family: 'Oswald', sans-serif;
 }
 
 .slika-pozadine {
-  background-image: url('../images/space2.jpg');
+  background-image: url('../images/image3.jpg');
   background-size: cover;
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position: center;
   top: 0;
   right: 0;
   left: 0;
@@ -33,7 +32,7 @@ body {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.55);
   z-index: -1;
   position: absolute;
   top: 0;
@@ -144,6 +143,7 @@ nav li:hover a {
 .moja-poruka {
   text-align: center;
   margin-bottom: 0.5rem;
+  margin-top: 8rem !important;
   color: white;
 }
 
@@ -173,6 +173,10 @@ section {
 .main {
   padding: 2rem 2rem 0 2rem;
   text-align: center;
+}
+
+.main h1 {
+  margin-top: 3rem;
 }
 
 h3 {
@@ -267,6 +271,7 @@ h3 {
   text-decoration: none;
   color: rgb(160, 160, 160);
   font-weight: 600;
+  padding: 1rem 0;
 }
 
 .projekat p {
@@ -275,13 +280,6 @@ h3 {
 
 .projekat p:hover {
   letter-spacing: 1px;
-}
-
-.projekat a {
-  text-decoration: none;
-  color: rgb(160, 160, 160);
-  font-weight: 600;
-  transition: all 100ms ease;
 }
 
 .projekat a:hover {

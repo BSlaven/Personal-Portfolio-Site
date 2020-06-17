@@ -9,3 +9,4 @@ otvoriMeni.addEventListener('click', () => {
   lista.classList.toggle('prikaži-meni');
   header.classList.toggle('prikaži-meni');
 });
+
