@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #d0fad6;
+  height: 10vh;
+  border-bottom: 1px solid rgb(197, 162, 202);
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.show-navbar {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: #032202;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.show-navbar:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.show-navbar.navbar-open {
+  transform: rotate(-225deg);
+}
+
+.navbar {
+  background-color: rgba(1, 34, 0, 0.945);
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 10vh;
+  left: -100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar.visible-navbar {
+  left: 0;
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.list-item {
+  margin-bottom: 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(240, 160, 229, 0.411);
+}
+
+.list-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ebfced;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+
+.list-item a:hover {
+  color: rgb(0, 20, 0);
+}
+
+.list-item a:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 3rem 0;
+  font-size: 1.2rem;
+  color: #111;
+  background-color: #EDF5E1;
+  min-height: 80vh;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-title {
+  margin-bottom: 5rem;
+  color: rgb(77, 16, 68);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.project-section {
+  height: max-content;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.project-section-paragraph {
+  padding: 1rem;
+}
+
+.project-section-paragraph:first-child {
+  border-bottom: 1px solid rgba(20, 1, 73, 0.1)
+}
+
+.buttons{
+  width: 100%;
+  max-width: 500px;
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4rem;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  cursor: pointer;
+}
+
+.view-more {
+  background-color: #022701;
+  color: white;
+}
+
+.contact-me {
+  border: 2px solid rgb(77, 16, 68);
+  margin-bottom: 5rem;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 20, 0);
+  height: 20vh;
+}
+
+.footer p {
+  color: #effdfd;
+  opacity: 0.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.icons {
+  background-color: #c4facb0e;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.fa-twitter {
+  color: rgb(79, 160, 252);
+  padding: 10px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.fa-linkedin {
+  color: rgb(2, 80, 168);
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.fa-github {
+  color: rgb(0, 5, 10);
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* ========= About ========= */
+.biografija section {
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.biografija h3 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.biografija p {
+  line-height: 1.4;
+  font-size: 1.3rem;
+}
+
+
+
+/* ======= Media queries ======= */
+@media (min-width: 768px) {
+  .show-navbar {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+    background-color: inherit;
+  }
+
+  .nav-list {
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .list-item {
+    margin: 0;
+    border: none;
+    transition: all 0.2s linear;
+  }
+
+  .list-item a {
+    color: #002c14;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .list-item a:hover, .list-item a:focus {
+    border-bottom: 2px solid #002c14;
+  }
+}

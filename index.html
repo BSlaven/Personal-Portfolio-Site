@@ -4,33 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/slaven.css">
-  <title>Slaven Bunijevac</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="icon" href="images/favicon1.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Test Website</title>
 </head>
 <body>
-
-  <div class="slika-pozadine"></div>
-  <div class="outer-div">
-    <header class="header" id="header">
-      <nav class="navbar container" id="navbar">
-        <ul class="nav-list" id="nav-list">
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="projekti.html">projects</a></li>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-link" href="index.html" rel="noopener noreferrer nofollow">
+        <img class="logo" src="images/logo.png" alt="main logo image">
+      </a>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li class="list-item"><a href="about.html">About</a></li>
+          <li class="list-item"><a href="contact.html">Contact</a></li>
+          <li class="list-item"><a href="projects.html">Projects</a></li>
         </ul>
-        <h3 class="otvori-meni" id="otvori-meni">menu</h3>
       </nav>
-    </header>
-    <!-- <h2 class="priprema">Sajt je u pripremi</h2> -->
-    <div class="container">
-      <main class="naslovna main">
-        <h1 class="moja-poruka">Ja sam Slaven Bunijevac. Ja pravim cool UI/UX projekte.</h1>
-        <a class="za_github" href="https://github.com/BSlaven/Personal-Portfolio-Site" target="_blank">( github code for this site )</a>
-      </main>
+      <span class="show-navbar" id="show-navbar">&plus;</span>
     </div>
-  
-  </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h1>I am a front-end developer</h1>
+      <p class="main-title">I can help your business grow</p>
+      <section class="project-section">
+          <p class="project-section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam</p>
+          <p class="project-section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam</p>
+      </section>
+      <div class="buttons">
+        <button class="cta view-more">more projects</button>
+        <button class="cta contact-me">Contact me</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <p>&copy; 2020 Slaven Bunijevac</p>
+      <div class="icons">
+        <a href="https://twitter.com/BunijevacSlaven" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/slaven-bunijevac-2a0834192/" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/BSlaven" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
 
-  <script defer src="slaven.js"></script>
+
+
+
+  <script src="app.js"></script>
+
 </body>
 </html>

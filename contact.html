@@ -3,39 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/slaven.css">
-  <title>Kontakt</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="icon" href="images/favicon1.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Slaven Bunijevac</title>
 </head>
 <body>
-  <div class="slika-pozadine"></div>
-
-  <div class="outer-div">
-    <header class="header" id="header">
-      <nav class="navbar container" id="navbar">
-        <ul class="nav-list" id="nav-list">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="projekti.html">projects</a></li>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-link" href="index.html" rel="noopener noreferrer nofollow">
+        <img class="logo" src="images/logo.png" alt="main logo image">
+      </a>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li class="list-item"><a href="index.html">home</a></li>
+          <li class="list-item"><a href="about.html">About</a></li>
+          <li class="list-item"><a href="projects.html">Projects</a></li>
         </ul>
-      <h3 class="otvori-meni" id="otvori-meni">menu</h3>
       </nav>
-    </header>
-    <!-- <h2 class="priprema">Sajt je u pripremi</h2> -->
+      <span class="show-navbar" id="show-navbar">&plus;</span>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section>
+        <h3>First Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam officia consectetur totam illo iure mollitia quaerat ipsam magnam fugiat eaque, doloremque fuga assumenda non quam quo voluptatem expedita et. Tenetur aliquam ex est consequatur quae assumenda, porro. Aut ab, odit. Impedit, incidunt!</p>
+      </section>
+      <section>
+        <h3>Section Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam officia consectetur totam illo iure mollitia quaerat ipsam magnam fugiat eaque, doloremque fuga assumenda non quam quo voluptatem expedita et. Tenetur aliquam ex est consequatur quae assumenda, porro. Aut ab, odit. Impedit, incidunt!</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <p>&copy; 2020 Slaven Bunijevac<p>
+      <div class="icons">
+        <a href="https://twitter.com/BunijevacSlaven" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/slaven-bunijevac-2a0834192/" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/BSlaven" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <main class="main container kontakt">      
-      <h1 class="moje-ime">Slaven Bunijevac</h1>
-      <h3 class="tekst-za-kontakt">Kako me možete kontaktirati</h3>
-
-      <ul class="lista-kontakata" id="lista-kontakata">
-        <li><p>Email:</p><span>slaven.bunijevac@gmail.com</span></li>
-        <li><p>Twitter:</p><a href="https://twitter.com/BunijevacSlaven" target="_blank" rel="noopener">@BunijevacSlaven</a></li>
-        <li><p>Linkedin:</p><a href="https://www.linkedin.com/in/slaven-bunijevac-2a0834192/" target="_blank" rel="noopener">Slaven Bunijevac</a></li>
-        <li><p>Github:</p><a href="https://github.com/BSlaven" target="_blank" rel="noopener">BSlaven</a></li>
-      </ul>
-    </main>
-  </div>
 
 
-  <script src="slaven.js"></script>
+
+  <script src="app.js"></script>
+
 </body>
 </html>
