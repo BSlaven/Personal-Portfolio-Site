@@ -155,9 +155,10 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.language p {
+.language-title  {
   margin-bottom: 0.2rem;
   font-weight: bold;
   color: #111;
@@ -171,7 +172,7 @@ button:focus {
 .project-section {
   height: 350px;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -201,7 +202,7 @@ button:focus {
 
 .buttons {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .cta {
@@ -309,7 +310,6 @@ button:focus {
 /* ======= Media queries ======= */
 @media(min-width: 600px) {
   .buttons {
-    max-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -356,5 +356,29 @@ button:focus {
 
   .list-item a:hover, .list-item a:focus {
     border-bottom: 2px solid #002c14;
+  }
+
+  .primary-title, .main-title, .languages, .project-section, .buttons {
+    align-self: flex-start;
+  }
+
+  .languages {
+    border: none;
+  }
+
+  .project-section {
+    flex-direction: row;
+    height: 500px;
+    margin-bottom: 5rem;
+    box-shadow: none;
+  }
+
+  .project-section img, .project-section-paragraph {
+    width: 50%;
+    height: 100%;
+  }
+
+  .project-section p {
+    text-align: center;
   }
 }
