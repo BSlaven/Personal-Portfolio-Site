@@ -140,9 +140,12 @@ button:focus {
 }
 
 .languages {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  /* justify-content: space-between;
+  align-items: center; */
   width: 100%;
   max-width: 800px;
   margin-bottom: 4rem;
@@ -191,13 +194,13 @@ button:focus {
   height: 50%;
 }
 
-.project-section p {
+.project-section-paragraph {
   background-color: rgb(220, 245, 207);
   padding-top: 1rem;
   padding: 0.5rem;
   height: 50%;
   text-align: start;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .buttons {
@@ -290,7 +293,7 @@ button:focus {
 
 /* ========= About ========= */
 .biografija section {
-  width: 90%;
+  width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -363,14 +366,21 @@ button:focus {
   }
 
   .languages {
+    display: flex;
+    justify-content: space-between;
     border: none;
   }
 
   .project-section {
     flex-direction: row;
-    height: 500px;
+    height: 300px;
     margin-bottom: 5rem;
     box-shadow: none;
+    border: 2px solid rgb(220, 245, 207);
+  }
+
+  .project-section img {
+    padding: 0;
   }
 
   .project-section img, .project-section-paragraph {
@@ -378,7 +388,22 @@ button:focus {
     height: 100%;
   }
 
-  .project-section p {
-    text-align: center;
+  .project-section-paragraph {
+    text-align: start;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .biografija h1, .biografija p {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .languages {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
   }
 }
