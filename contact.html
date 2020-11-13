@@ -25,17 +25,22 @@
       <span class="show-navbar" id="show-navbar">&plus;</span>
     </div>
   </header>
-  <main class="main">
-    <div class="container">
-      <section>
-        <h3>First Section</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam officia consectetur totam illo iure mollitia quaerat ipsam magnam fugiat eaque, doloremque fuga assumenda non quam quo voluptatem expedita et. Tenetur aliquam ex est consequatur quae assumenda, porro. Aut ab, odit. Impedit, incidunt!</p>
-      </section>
-      <section>
-        <h3>Section Section</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, accusamus, quisquam. Ut eveniet amet alias fugit quibusdam officia consectetur totam illo iure mollitia quaerat ipsam magnam fugiat eaque, doloremque fuga assumenda non quam quo voluptatem expedita et. Tenetur aliquam ex est consequatur quae assumenda, porro. Aut ab, odit. Impedit, incidunt!</p>
-      </section>
-    </div>
+  <main class="main contact-main container">
+    <form class="contact-form" id="contact-form">
+      <label for="name" class="form-label">
+        Name:
+        <input type="text" class="name" id="name" placeholder="Enter your name..." required>
+      </label>
+      <label for="email" class="form-label">
+        Email:
+        <input type="email" class="email" id="email" placeholder="Enter your email..." required>
+      </label>
+      <label for="message" class="form-label">
+        Message:
+        <textarea id="message" name="message" rows="5" cols="20" class="message" placeholder="Write your message..."></textarea>
+      </label>
+      <button class="form-button" id="form-button">Send</button>
+    </form>
   </main>
   <footer class="footer" id="footer">
     <div class="container footer-container">

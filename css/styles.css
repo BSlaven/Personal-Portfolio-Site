@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
   font-family: 'Montserrat';
   font-size: 16px;
   min-height: 100vh;
+  background-color: #EDF5E1;
 }
 
 button:focus {
@@ -144,8 +145,6 @@ button:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.5rem;
-  /* justify-content: space-between;
-  align-items: center; */
   width: 100%;
   max-width: 800px;
   margin-bottom: 4rem;
@@ -176,7 +175,7 @@ button:focus {
   height: 350px;
   width: 100%;
   max-width: 800px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -185,12 +184,10 @@ button:focus {
   color: #333;
   -webkit-tap-highlight-color: transparent;
   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
-  /* border: 1px solid red; */
 }
 
 .project-section img {
   border-bottom: 1px solid rgba(20, 1, 73, 0.1);
-  padding-bottom: 1rem;
   height: 50%;
 }
 
@@ -198,7 +195,7 @@ button:focus {
   background-color: rgb(220, 245, 207);
   padding-top: 1rem;
   padding: 0.5rem;
-  height: 50%;
+  height: min-content;;
   text-align: start;
   line-height: 1.8;
 }
@@ -228,7 +225,7 @@ button:focus {
 
 .view-more {
   background-color: #022701;
-  color: white;
+  color: #fff;
 }
 
 .contact-me {
@@ -307,6 +304,96 @@ button:focus {
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
 }
+
+/* ======= Contact ======= */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', Arial;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.name, .email, .message {
+  width: 100%;
+  padding: 0.5rem;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  background-color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.name:focus, .email:focus, .message:focus {
+  border: 3px solid #022701;
+  outline: none;
+}
+
+.form-button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #022701;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form-button:focus {
+  background-color: #010f01;
+}
+
+
+/* ======= Projects ======= */
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: min-content;
+  grid-gap: 1rem;
+}
+
+.project {
+  max-width: 100%;
+  /* border: 1px solid red; */
+  border: 3px solid #d0fad6b4;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.project-image, .project-paragraph {
+  max-width: 100%;
+}
+
+.project-image {
+  height: 50%;
+  max-height: 300px;
+}
+
+.project-paragraph {
+  height: 50%;
+  min-height: min-content;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: #d0fad6;
+}
+
 
 
 
