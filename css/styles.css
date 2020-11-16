@@ -13,8 +13,12 @@ body {
   background-color: #EDF5E1;
 }
 
-button:focus {
-  outline: none;
+button:focus, a:focus {
+  outline: 2px solid #333;
+}
+
+a:active {
+  transform: scale(0.98);
 }
 
 .container {
@@ -91,7 +95,6 @@ button:focus {
 .list-item {
   margin-bottom: 2rem;
   position: relative;
-  border-bottom: 1px solid rgba(240, 160, 229, 0.411);
 }
 
 .list-item a {
@@ -104,11 +107,13 @@ button:focus {
   transition: all 0.1s linear;
 }
 
-.list-item a:hover {
-  color: rgb(0, 20, 0);
+.list-item a:hover, .list-item a:focus {
+  color: #002706;
+  border-bottom: 1px solid rgba(240, 160, 229, 0.211);
 }
 
 .list-item a:focus {
+  outline: none;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -178,7 +183,6 @@ button:focus {
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 4px;
   text-decoration: none;
   color: #333;
@@ -195,7 +199,7 @@ button:focus {
   background-color: rgb(220, 245, 207);
   padding-top: 1rem;
   padding: 0.5rem;
-  height: min-content;;
+  height: 50%;
   text-align: start;
   line-height: 1.8;
 }
@@ -211,7 +215,7 @@ button:focus {
   width: 100%;
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
-  border-radius: 4rem;
+  border-radius: 4px;
   border: none;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -329,34 +333,36 @@ button:focus {
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #ccc;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
 .name:focus, .email:focus, .message:focus {
-  border: 2px solid #205a1e;
+  border: 2px solid #8102bd;
   outline: none;
   background-color: #ddd;
 }
 
 .form-button {
-  width: 100%;
+  width: 40%;
+  margin-bottom: 5rem;
   padding: 0.8rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #022701;
+  border-radius: 5px;
+  color: #eee;
+  background-color: #8102bd;
   font-weight: bold;
   border: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
 .form-button:focus {
-  background-color: #010f01;
+  background-color: #41005f;
+  color: #fff;
 }
 
 .social-links {
