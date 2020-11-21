@@ -177,10 +177,10 @@ a:active {
 }
 
 .project-section {
-  height: 350px;
+  /* height: 350px; */
   width: 100%;
   max-width: 800px;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -188,6 +188,7 @@ a:active {
   color: #333;
   -webkit-tap-highlight-color: transparent;
   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+  height: min-content;
 }
 
 .project-section img {
@@ -197,10 +198,10 @@ a:active {
 
 .project-section-paragraph {
   background-color: rgb(220, 245, 207);
+  /* background-color: red; */
   padding-top: 1rem;
   padding: 0.5rem;
-  height: min-content;
-  min-height: 50%; 
+  height: minmax(50%, min-content);
   text-align: start;
   line-height: 1.8;
 }
@@ -293,6 +294,7 @@ a:active {
   font-size: 20px;
 }
 
+
 /* ========= About ========= */
 .biografija section {
   width: 100%;
@@ -305,7 +307,7 @@ a:active {
 }
 
 .biografija p {
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
 }
@@ -368,7 +370,6 @@ a:active {
 }
 
 .social-links {
-  /* background-color: rgb(99, 99, 99); */
   width: 100%;
   max-width: 500px;
   margin-bottom: 5rem;
@@ -432,13 +433,14 @@ a:active {
 }
 
 .project {
-  max-width: 100%;
-  /* border: 1px solid red; */
+  width: 100%;
   border: 3px solid #d0fad6b4;
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
   color: #333;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image, .project-paragraph {
@@ -451,8 +453,7 @@ a:active {
 }
 
 .project-paragraph {
-  height: 50%;
-  min-height: min-content;
+  height: min-content;
   padding: 1rem 0.5rem;
   text-align: center;
   background-color: #d0fad6;
