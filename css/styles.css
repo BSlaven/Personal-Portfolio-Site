@@ -123,7 +123,7 @@ a:active {
   font-size: 1.2rem;
   color: #111;
   background-color: #f9fdf2;
-  min-height: 80vh;
+  height: min-content;
 }
 
 .main .container {
@@ -181,6 +181,7 @@ a:active {
   grid-template-columns: 1fr;
   width: 100%;
   margin-bottom: 3rem;
+  min-height: 100vh;
 }
 
 .project-container {
@@ -192,7 +193,7 @@ a:active {
 }
 
 .project-container .project-paragraph {
-  text-align: justify;
+  font-size: 0.8rem;
 }
 
 .buttons {
@@ -454,6 +455,7 @@ a:active {
 .project-paragraph {
   min-height: 40%;
   padding: 1rem;
+  font-size: 0.8rem;
   height: min-content;
   padding: 1rem;
   text-align: center;
@@ -555,14 +557,16 @@ a:active {
   }
 
   .main-projects {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     width: 100%;
     margin-bottom: 3rem;
+    min-height: 100vh;
   }
 
   .project-container {
     margin-bottom: 5rem;
+    height: 50vh;
   }
 
   .project-container .project {
@@ -580,8 +584,9 @@ a:active {
     height: 10%;
   }
 
-  .project-container .project-paragraph {
-    height: 40%;
+  .project-container .project-paragraph,
+  .project-container .project-image {
+    height: 45%;
     line-height: 1.5;
   }
 
@@ -591,10 +596,11 @@ a:active {
     width: 100%;
   }
 
+
   /* Projects */
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 100%;
     margin-bottom: 3rem;
   }
@@ -602,15 +608,14 @@ a:active {
   .projects-project-container {
     display: flex;
     flex-direction: column;
-    /* height: 30%; */
-    /* height: min-content; */
+    min-height: 50%;
   }
 
   .projects-project-container .project {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: stretch;    
+    justify-content: stretch;
   }
 
   .projects-project-container .project-image,
@@ -618,7 +623,7 @@ a:active {
   .projects-project-container .project-paragraph {
     width: 100%;
   }
-  
+
   .projects-project-container .project-image,
   .projects-project-container .project-paragraph {
     height: 45%;
@@ -630,8 +635,7 @@ a:active {
   }
 
   .projects-project-container .project-paragraph {
-    text-align: justify;
     line-height: 1.5;
   }
-  
+
 }
