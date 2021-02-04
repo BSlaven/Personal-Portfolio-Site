@@ -450,6 +450,10 @@ a:active {
   height: 10%;
 }
 
+.project-languages p {
+  opacity: 0.8;
+}
+
 .project-image, .project-paragraph, .project-languages {
   max-width: 100%;
 }
