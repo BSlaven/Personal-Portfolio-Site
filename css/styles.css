@@ -22,7 +22,7 @@ a:active {
 }
 
 .container {
-  width: 85%;
+  width: 75%;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
@@ -195,8 +195,9 @@ a:active {
   margin-bottom: 1.5rem;
 }
 
-.project-container .project-paragraph {
+.project-paragraph {
   font-size: 0.8rem;
+  line-height: 2;
 }
 
 .buttons {
@@ -446,12 +447,8 @@ a:active {
   align-items: center;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   height: 10%;
-}
-
-.project-languages p {
-  opacity: 0.8;
 }
 
 .project-image, .project-paragraph, .project-languages {
@@ -469,7 +466,7 @@ a:active {
   height: min-content;
   padding: 1rem;
   text-align: center;
-  background-color: #d0fad6;
+  /* background-color: #d0fad6; */
 }
 
 
@@ -602,7 +599,7 @@ a:active {
   .project-container .project-paragraph,
   .project-container .project-image {
     height: 45%;
-    line-height: 1.5;
+    line-height: 2;
   }
 
   .project-container .project-image,
@@ -673,7 +670,7 @@ a:active {
   .projects-project-container .project {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 60%;
     justify-content: stretch;
   }
 
@@ -694,7 +691,6 @@ a:active {
   }
 
   .projects-project-container .project-paragraph {
-    line-height: 1.5;
+    line-height: 2;
   }
-
 }
