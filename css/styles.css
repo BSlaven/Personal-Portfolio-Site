@@ -36,9 +36,9 @@ a:active {
 
 .header {
   width: 100%;
-  background-color: #d0fad6;
+  background-color: #f9fdf2;
   height: 10vh;
-  border-bottom: 1px solid rgb(197, 162, 202);
+  border-bottom: 1px solid rgba(197, 162, 202, 0.322);
 }
 
 .logo {
@@ -166,10 +166,12 @@ a:active {
   text-align: center;
 }
 
-.language-title  {
-  margin-bottom: 0.2rem;
+.language-title {
+  margin-bottom: 0.7rem;
   font-weight: bold;
+  font-size: 1rem;
   color: #111;
+
 }
 
 .language img {
@@ -190,7 +192,7 @@ a:active {
 }
 
 .project-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-container .project-paragraph {
@@ -316,6 +318,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
   gap: 1rem;
   font-weight: bold;
 }
@@ -325,16 +328,16 @@ a:active {
   padding: 0.5rem;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   font-size: 1rem;
   margin-bottom: 2rem;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
 .name:focus, .email:focus, .message:focus {
-  border: 2px solid #8102bd;
+  border: 2px solid #1c9275;
   outline: none;
-  background-color: #ddd;
+  /* background-color: #ddd; */
 }
 
 .form-button {
@@ -345,7 +348,7 @@ a:active {
   text-transform: uppercase;
   border-radius: 5px;
   color: #eee;
-  background-color: #8102bd;
+  background-color: #1c9275;
   font-weight: bold;
   border: none;
   letter-spacing: 0.05rem;
@@ -355,7 +358,7 @@ a:active {
 
 .form-button:focus {
   outline: none;
-  background-color: #41005f;
+  background-color: #0d4436;
   color: #fff;
 }
 
@@ -424,7 +427,7 @@ a:active {
   position: relative;
   width: 100%;
   height: min-content;
-  border: 3px solid #d0fad6b4;
+  /* border: 3px solid #d0fad6b4; */
   border-radius: 4px;
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
@@ -433,6 +436,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .project-languages {
@@ -441,6 +445,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 1rem;
   background-color: #ddd;
   height: 10%;
 }
@@ -508,7 +513,7 @@ a:active {
   .list-item a {
     color: #002c14;
     letter-spacing: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
   }
 
@@ -611,7 +616,7 @@ a:active {
   }
 
   .contact-form {
-    background-color: #e9faeb;
+    /* background-color: #e9faeb; */
     padding: 1rem;
   }
 
