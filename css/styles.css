@@ -133,17 +133,24 @@ a:active {
   align-items: center;
 }
 
+.main .title-intro {
+  font-size: 0.8rem;
+  color: #111;
+}
+
 .main h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .main-title {
   margin-bottom: 5rem;
-  color: #333;
+  color: rgb(44, 56, 58);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .languages {
@@ -174,13 +181,16 @@ a:active {
 }
 
 .language img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
+
+/* Main page projects */
 
 .main-projects {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
   margin-bottom: 3rem;
   min-height: 100vh;
@@ -196,6 +206,9 @@ a:active {
 }
 
 .project .project-title {
+  width: 90%;
+  font-size: 24px;
+  text-align: center;
   margin-bottom: 1.5rem;
   position: absolute;
   background-color: #fff;
@@ -206,7 +219,7 @@ a:active {
 
 .project-paragraph {
   font-size: 0.8rem;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .buttons {
@@ -242,6 +255,8 @@ a:active {
   margin-bottom: 5rem;
   color: #022701;
 }
+
+/* End of main page projects */
 
 /* Footer */
 .footer {
@@ -455,7 +470,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.6rem;
   height: 10%;
 }
 
