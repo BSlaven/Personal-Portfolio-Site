@@ -177,7 +177,7 @@ a:active {
   margin-bottom: 0.7rem;
   font-weight: bold;
   font-size: 1rem;
-  color: #aaa;
+  color: #777;
 }
 
 .language img {
@@ -190,7 +190,7 @@ a:active {
 .main-projects {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   width: 100%;
   margin-bottom: 3rem;
   min-height: 100vh;
@@ -203,6 +203,7 @@ a:active {
 
 .project-container {
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 .project .project-title {
