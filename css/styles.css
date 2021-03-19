@@ -9,7 +9,7 @@
 body {
   font-family: 'Montserrat';
   font-size: 16px;
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #f9fdf2;
 }
 
@@ -39,6 +39,9 @@ a:active {
   background-color: #f9fdf2;
   height: 10vh;
   border-bottom: 1px solid rgba(197, 162, 202, 0.322);
+  position: fixed;
+  top: 0;
+  z-index: 111;
 }
 
 .logo {
@@ -118,9 +121,29 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  background-color: rgb(13, 105, 38);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  z-index: 22;
+  position: fixed;
+  bottom: 120px;
+  right: 10px;
+  display: none;
+}
+
+.back-to-top:focus {
+  outline: none;
+}
+/* END OF BACK TO TOP BUTTON */
+
 .main {
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 7rem 0 3rem;
   font-size: 1.2rem;
   color: #111;
   background-color: #f9fdf2;
@@ -140,16 +163,16 @@ a:active {
 
 .main h1 {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: rgb(2, 71, 20);
 }
 
 .main-title {
   margin-bottom: 5rem;
-  color: rgb(44, 56, 58);
+  color: rgb(54, 56, 56);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
