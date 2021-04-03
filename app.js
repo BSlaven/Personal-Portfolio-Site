@@ -4,23 +4,19 @@ const container = document.querySelector('.container');
 const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
 
-// document.addEventListener('scroll', scrollDocumentToTop);
-// window.onscroll = function() {scrollDocumentToTop()};
-
+window.onscroll = () => { scrollDocumentToTop() };
 
 function scrollDocumentToTop() {
-
-  // if(document.body.scrollTop > 100) {
-  //   toTopBtn.style.display = 'block';
-  // } else {
-  //   toTopBtn.style.display = 'none'
-  // }
-  console.log(document.scrollingElement.scrollTop);
+  if(document.scrollingElement.scrollTop > 200) {
+    toTopBtn.style.visibility = 'visible';
+  } else {
+    toTopBtn.style.visibility = 'hidden';
+  }
 }
 
 toTopBtn.addEventListener('click', () => {
-  console.log('Slaven ide na vrh');
-})
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 
 
