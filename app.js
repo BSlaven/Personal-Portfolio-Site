@@ -18,8 +18,6 @@ toTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
-
 showNavbar.addEventListener('click', () => {
   navbar.classList.toggle('visible-navbar');
   showNavbar.classList.toggle('navbar-open');
