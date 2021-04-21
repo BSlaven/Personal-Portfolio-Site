@@ -27,14 +27,14 @@
   </header>
   <main class="main contact-main container">
     <button class="back-to-top fas fa-chevron-up" id="back-to-top"></button>
-    <form class="contact-form" id="contact-form">
+    <form action="post" data-netlify="true" class="contact-form" id="contact-form">
       <label for="name" class="form-label">
         Name
         <input type="text" class="name" id="name" required>
       </label>
       <label for="email" class="form-label">
         Email
-        <input type="email" class="email" id="email" required>
+        <input type="email" class="email" name="email" id="email" required>
       </label>
       <label for="message" class="form-label">
         Message
