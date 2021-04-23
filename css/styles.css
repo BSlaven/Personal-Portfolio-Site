@@ -145,6 +145,7 @@ a:active {
 }
 /* END OF BACK TO TOP BUTTON */
 
+/* main page */
 .main {
   margin: 0 auto;
   padding: 7rem 0 3rem;
@@ -586,6 +587,10 @@ a:active {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project-container {
+    height: 50vh;
+  }
+
   /* Contact page */
   .form-button {
     width: 50%;
@@ -604,7 +609,7 @@ a:active {
   }
 
   .main-projects {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns:  repeat(3, 1fr);
     gap: 1rem;
     width: 100%;
     margin-bottom: 3rem;
