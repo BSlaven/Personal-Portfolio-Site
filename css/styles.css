@@ -57,14 +57,12 @@ a:active {
 .show-navbar {
   font-size: 3.5rem;
   font-weight: bold;
-  padding: 0.3rem 0 0.3rem 0.3rem;
   cursor: pointer;
   color: #032202;
   display: inline-block;
   transition: all 0.3s ease-in-out;
   -webkit-tap-highlight-color: transparent;
   position: relative;
-  left: 0.5rem;
 }
 
 .show-navbar:focus {
