@@ -358,6 +358,8 @@ a:active {
 
 /* ======= Contact ======= */
 .contact-form {
+  /* border: 1px solid red; */
+  border-radius: 4px;
   width: 100%;
   max-width: 500px;
   font-size: 1.2rem;
@@ -376,6 +378,7 @@ a:active {
 }
 
 .name, .email, .message {
+  background-color: #ddd;
   width: 100%;
   padding: 0.5rem;
   border: 2px solid transparent;
@@ -418,7 +421,8 @@ a:active {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -426,10 +430,22 @@ a:active {
   text-decoration: none;
   text-align: center;
   color: #333;
+  width: 100%;
   font-weight: bold;
   -webkit-tap-highlight-color: transparent;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .fab {
+  font-size: 1.6rem;
+}
+
+.social-text {
+  font-size: 1.4rem;
 }
 
 .social:focus {
@@ -441,8 +457,8 @@ a:active {
 }
 
 .social-twitter:focus {
-  background-color: rgb(79, 160, 252);
-  color: #111;
+  outline: 2px solid rgb(79, 160, 252);
+  outline-offset: -6px;
 }
 
 .social-linkedin {
@@ -450,8 +466,8 @@ a:active {
 }
 
 .social-linkedin:focus {
-  background-color: rgb(2, 80, 168) ;
-  color: #fff;
+  outline: 2px solid rgb(2, 80, 168);
+  outline-offset: -6px;
 }
 
 .social-github {
@@ -459,9 +475,11 @@ a:active {
 }
 
 .social-github:focus {
-  background-color: rgb(0, 5, 10);
-  color: #fff;
+  outline: 2px solid rgb(0, 5, 10);
+  outline-offset: -6px;
 }
+
+/* end of contact page */
 
 
 /* ======= Projects ======= */
@@ -655,7 +673,6 @@ a:active {
   }
 
   .contact-form {
-    /* background-color: #e9faeb; */
     padding: 1rem;
   }
 
@@ -664,30 +681,19 @@ a:active {
   }
 
   .social-links {
-    flex-direction: row;
-    justify-content: space-between;
+    border-radius: 4px;
+    justify-content: flex-start;
     gap: 1rem;
-    justify-self: end;
     position: relative;
+    padding: 1rem;
   }
 
   .social {
-    position: absolute;
-    text-align: center;
+    border: none;
+    justify-content: flex-start;
     padding: 1rem;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-  }
-
-  .social-linkedin {
-    top: 150px;
-    left: 150px;
-  }
-  
-  .social-github {
-    top: 300px;
-    left: 300px;
+    width: 100%;
+    max-width: 500px;
   }
 
 
