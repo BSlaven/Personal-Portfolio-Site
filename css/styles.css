@@ -146,7 +146,7 @@ a:active {
 /* main page */
 .main {
   margin: 0 auto;
-  padding: 11rem 0 0;
+  padding: 9rem 0 0;
   font-size: 1.2rem;
   color: #111;
   background-color: #f9fdf2;
@@ -193,7 +193,7 @@ a:active {
 }
 
 .main-title:not(:last-of-type) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .languages {
@@ -270,8 +270,6 @@ a:active {
 .buttons {
   width: 100%;
   max-width: 500px;
-  position: absolute;
-  bottom: -20rem;
 }
 
 .cta {
@@ -573,6 +571,10 @@ a:active {
     width: 45%;
     margin: 0;
   }
+  
+  .main-title:last-of-type {
+    margin-bottom: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -613,6 +615,10 @@ a:active {
 
   .primary-title, .main-title, .languages, .project-section, .buttons {
     align-self: flex-start;
+  }
+
+  .main-title:last-of-type {
+    margin-bottom: 2rem;
   }
 
   .languages {
