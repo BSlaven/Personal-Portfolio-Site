@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   min-height: 80vh;
   background-color: #f9fdf2;
@@ -152,10 +152,6 @@ a:active {
   background-color: #f9fdf2;
 }
 
-/* .main-container {
-  height: 100%;
-} */
-
 .main.landing-page {
   min-height: 85vh;
 }
@@ -171,21 +167,16 @@ a:active {
   align-items: center;
 }
 
-/* .main .title-intro {
-  font-size: 0.8rem;
-  color: #111;
-} */
-
 .main h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1.6rem;
   line-height: 1;
   color: rgb(2, 71, 20);
 }
 
 .main-title {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   color: rgb(54, 56, 56);
   text-align: center;
   font-size: 1rem;
@@ -193,7 +184,7 @@ a:active {
 }
 
 .main-title:not(:last-of-type) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .languages {
@@ -216,7 +207,6 @@ a:active {
 }
 
 .language-title {
-  /* margin-bottom: 0.7rem; */
   font-weight: bold;
   font-size: 0.7rem;
   color: #777;
@@ -228,45 +218,7 @@ a:active {
   height: 50px;
 }
 
-/* Main page projects */
-
-.main-projects {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  width: 100%;
-  margin-bottom: 2rem;
-  min-height: 100vh;
-}
-
-.project {
-  overflow: hidden;
-  position: relative;
-}
-
-.project-container {
-  margin-bottom: 3rem;
-  width: 100%;
-  height: min-content;
-}
-
-.project .project-title {
-  width: 90%;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  position: absolute;
-  background-color: #fff;
-  padding: 0.5rem 1rem;
-  top: 0;
-  left: 0;
-}
-
-.project .project-paragraph {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
+/* main page buttons */
 .buttons {
   width: 100%;
   max-width: 500px;
@@ -301,7 +253,8 @@ a:active {
   color: #022701;
 }
 
-/* End of main page projects */
+/* main page buttons */
+
 
 /* Footer */
 .footer {
@@ -499,7 +452,6 @@ a:active {
   outline: 2px solid rgb(0, 5, 10);
   outline-offset: -6px;
 }
-
 /* end of contact page */
 
 
@@ -571,13 +523,38 @@ a:active {
     width: 45%;
     margin: 0;
   }
-  
-  .main-title:last-of-type {
-    margin-bottom: 7rem;
-  }
 }
 
 @media (min-width: 768px) {
+
+
+  .primary-title, .main-title, .languages, .project-section, .buttons {
+    align-self: flex-start;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  /* main projects */
+  .main-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-container {
+    height: 50vh;
+  }
+
+  /* Contact page */
+  .form-button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  /* visible navbar */
   .show-navbar {
     display: none;
   }
@@ -612,37 +589,7 @@ a:active {
   .list-item a:hover, .list-item a:focus {
     border-bottom: 2px solid #002c14;
   }
-
-  .primary-title, .main-title, .languages, .project-section, .buttons {
-    align-self: flex-start;
-  }
-
-  .main-title:last-of-type {
-    margin-bottom: 2rem;
-  }
-
-  .languages {
-    display: flex;
-    justify-content: space-between;
-    border: none;
-  }
-
-  /* main projects */
-  .main-projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .project-container {
-    height: 50vh;
-  }
-
-  /* Contact page */
-  .form-button {
-    width: 50%;
-  }
-}
-
-@media (min-width: 900px) {
+  /* visible navbar */
 
   .landing-page {
     min-height: 85vh;
