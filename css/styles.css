@@ -170,7 +170,7 @@ a:active {
 .main h1 {
   text-align: left;
   font-size: 1rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.5rem;
   color: #444;
 }
 
@@ -584,20 +584,16 @@ a:active {
   }
   /* visible navbar */
 
+  .main.landing-page {
+    padding-top: 4rem;
+  }
+
   .landing-page {
     min-height: 85vh;
   }
 
   .biografija h1, .biografija p {
     max-width: 800px;
-  }
-
-  .languages {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.5rem;
-    width: 500px;
-    max-width: 100%;
   }
 
   .main-projects {
