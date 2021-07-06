@@ -152,8 +152,6 @@ a:active {
 
 .main.landing-page {
   min-height: 100vh;
-  background-image: url('/images/vector-bottom-right-smaller.jpg');
-  background-size: cover;
 }
 
 .landing-page .container {
@@ -169,13 +167,13 @@ a:active {
 
 .main h1 {
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
   color: #444;
 }
 
 .main-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: rgb(2, 71, 20);
   text-align: center;
   font-size: 2.5rem;
@@ -186,8 +184,7 @@ a:active {
 .main-title:last-of-type {
   margin-bottom: 2rem;
   color: rgb(54, 56, 56);
-  font-size: 1.4rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
 }
 
 /* main page buttons */
@@ -496,12 +493,7 @@ a:active {
     margin-top: 4rem;
   }
 
-  .main-title:last-of-type {
-    margin-bottom: 5rem;
-  }
-
   .buttons {
-    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -509,9 +501,12 @@ a:active {
   }
 
   .cta {
-    display: inline;
-    width: 45%;
-    margin: 0;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .cta:first-of-type {
+    margin-left: 0;
   }
 }
 
@@ -526,7 +521,6 @@ a:active {
   }
 
   .buttons {
-    margin-top: 2rem;
     max-width: 500px;
   }
 
@@ -585,7 +579,8 @@ a:active {
   /* visible navbar */
 
   .main.landing-page {
-    padding-top: 4rem;
+    background-image: url('/images/vector-bottom-right-smaller.jpg');
+    background-size: cover;
   }
 
   .landing-page {
