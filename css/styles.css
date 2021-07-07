@@ -548,6 +548,7 @@ a:active {
   .navbar {
     position: static;
     background-color: inherit;
+    height: 100%;
   }
 
   .nav-list {
@@ -562,8 +563,12 @@ a:active {
 
   .list-item {
     margin: 0;
+    padding: 0 0.5rem;
+    height: 100%;
     border: none;
     transition: all 0.2s linear;
+    display: flex;
+    align-items: center;
   }
 
   .list-item a {
@@ -571,6 +576,7 @@ a:active {
     letter-spacing: 0;
     font-size: 1.1rem;
     font-weight: bold;
+    display: block;
   }
 
   .list-item a:hover, .list-item a:focus {
