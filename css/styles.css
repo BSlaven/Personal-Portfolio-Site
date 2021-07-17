@@ -99,6 +99,9 @@ a:active {
 .list-item {
   margin-bottom: 2rem;
   position: relative;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  /* width: 100%; */
 }
 
 .list-item a {
@@ -111,8 +114,8 @@ a:active {
   transition: all 0.1s linear;
 }
 
-.list-item a:hover, .list-item a:focus {
-  color: #ccc;
+.list-item:focus-within {
+  background-color:rgb(13, 105, 38);
 }
 
 .list-item a:focus {
@@ -235,8 +238,8 @@ a:active {
 
 /* Footer */
 .footer {
-  position: relative;
-  bottom: 0;
+  /* position: relative;
+  bottom: 0; */
   width: 100%;
   background-color: rgb(0, 20, 0);
   height: 15vh;
