@@ -101,7 +101,6 @@ a:active {
   position: relative;
   padding: 0.5rem 2rem;
   border-radius: 4px;
-  /* width: 100%; */
 }
 
 .list-item a {
@@ -333,7 +332,14 @@ a:active {
 }
 
 /* ======= Contact ======= */
+.contact-main {
+  padding-top: 6rem;
+  background-color: #fff;
+}
+
 .contact-form {
+  padding: 1rem;
+  background-color: rgb(218, 233, 232);
   border-radius: 4px;
   width: 100%;
   max-width: 800px;
@@ -364,13 +370,13 @@ a:active {
 }
 
 .name:focus, .email:focus, .message:focus {
-  border: 2px solid #1c9275;
+  border: 2px solid #0d4436;
   outline: none;
 }
 
 .form-button {
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   padding: 0.8rem 1rem;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -384,7 +390,7 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
-.form-button:focus {
+.form-button:focus,.form-button:hover {
   outline: none;
   background-color: #0d4436;
   color: #fff;
@@ -601,8 +607,16 @@ a:active {
     font-weight: bold;
   }
 
+  .list-item:focus-within {
+    background-color: transparent;
+  }
+
   .list-item a:hover, .list-item a:focus {
     color: #99B49F;
+  }
+
+  .list-item a:active {
+    background-color: #032202;
   }
   /* visible navbar */
 
