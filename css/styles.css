@@ -22,7 +22,7 @@ a:active {
 }
 
 .container {
-  width: 75%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
@@ -333,7 +333,6 @@ a:active {
 
 /* ======= Contact ======= */
 .contact-main {
-  padding-top: 6rem;
   background-color: #fff;
 }
 
@@ -345,7 +344,7 @@ a:active {
   max-width: 800px;
   font-size: 1.2rem;
   font-family: 'Montserrat', Arial;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .form-label {
@@ -398,8 +397,8 @@ a:active {
 
 .social-links {
   width: 100%;
-  max-width: 800px;
-  margin-bottom: 5rem;
+  max-width: 350px;
+  margin: 0 auto 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -422,11 +421,11 @@ a:active {
 }
 
 .social .fab {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .social-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .social:focus {
@@ -675,20 +674,16 @@ a:active {
 
   /* Contact page */
   .contact-main {
-    padding: 4rem 0 0;
+    padding: 7rem 0;
     display: flex;
-    justify-content: center;
+    gap: 4rem;
+    min-height: 100vh;
   }
 
   .contact-form {
     padding: 1rem;
-    height: 100%;
-    background-color:rgb(221, 238, 228);
     width: 50%;
-    margin-bottom: 0;
-    padding: 5rem 2rem 5rem 1rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    padding: 3rem 2rem 5rem 1rem;
   }
 
   .form-button {
@@ -696,25 +691,32 @@ a:active {
   }
 
   .social-links {
-    background-color:rgb(241, 247, 243);
     width: 50%;
-    justify-content: flex-start;
+    height: min-content;
+    display: flex;
+    justify-content: flex-end;
     gap: 1rem;
     position: relative;
-    padding: 5rem 1rem 5rem 2rem;
+    padding: 3rem 1rem 5rem 2rem;
     margin: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
   }
 
   .social {
     border: none;
     justify-content: flex-start;
-    padding: 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     margin-bottom: 1rem;
   }
+
+  .social .fab {
+    font-size: 1.6rem;
+  }
+
+  .social-text {
+    font-size: 1.4rem;
+  }
+  /* Contact page */
 
 
   /* Projects */
