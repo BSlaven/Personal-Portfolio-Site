@@ -467,10 +467,10 @@ a:active {
 .projects {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: min-content;
-  grid-gap: 2rem;
-  margin-bottom: 3rem;
+  grid-gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .solo-projects-title {
@@ -478,6 +478,84 @@ a:active {
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
 }
+
+/* === PROJECT CARD === */
+.project-card {
+  height: 650px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  perspective: 150rem;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(239, 252, 245);
+}
+
+.card-front {
+  width: 100%;
+  position: relative;
+}
+
+.project-title {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 50%;
+  /* box-shadow: none; */
+}
+
+.card-body {
+  margin: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.card-back {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-back .link {
+  width: 200px;
+  text-align: center;
+  background-color: #12400b;
+  color: #fff;;
+  padding: 0.5rem 1rem;
+  border: 2px solid #12400b;
+  border-radius: 150px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card-back .github-link {
+  background-color: #d7e8d5;
+  color: #12400b;
+  font-weight: bold;
+}
+
+.project-languages {
+  display: none;
+}
+/* === PROJECT CARD === */
 
 .projects-project-container {
   position: relative;
@@ -695,15 +773,76 @@ a:active {
     font-size: 1.4rem;
   }
   /* Contact page */
+}
 
-
-  /* Projects */
-  .projects-project-container .project-languages {
-    height: 10%;
-    flex-direction: row;
+@media(min-width: 1000px) {
+  .project-card {
+    height: 550px;
+    box-shadow: none;
+    overflow: visible;
   }
 
-  .project-title {
-    font-size: 2rem;
+  .project-card:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+
+  .project-card:hover .card-back {
+    transform: rotateY(0);
+  }
+
+  .card-front {
+    height: 550px;
+    backface-visibility: hidden;
+    transition: transform 250ms ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .card-body {
+    margin-top: 3rem;
+  }
+
+  .card-back {
+    width: 100%;
+    height: 550px;
+    top: 0;
+    left: 0;
+    padding: 30% 1rem 1rem;
+    gap: 2rem;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 250ms ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .card-back .github-link:hover {
+    background-color: #adbaab;
+  }
+
+  .card-back .demo-link:hover {
+    background-color: #164f0d;
+    border-color: #164f0d;
+  }
+
+  .project-languages {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    margin-top: 2rem;
+    color: #555;
+  }
+
+  .project-languages > * {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem 0.3rem;
   }
 }
