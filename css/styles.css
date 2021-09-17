@@ -511,7 +511,6 @@ a:active {
 .project-image {
   width: 100%;
   height: 50%;
-  /* box-shadow: none; */
 }
 
 .card-body {
@@ -557,7 +556,7 @@ a:active {
 }
 /* === PROJECT CARD === */
 
-.projects-project-container {
+/* .projects-project-container {
   position: relative;
   width: 100%;
   height: min-content;
@@ -614,7 +613,7 @@ a:active {
   text-align: center;
   background-color: #ecfdef;
   color: #333;
-}
+} */
 
 
 /* ======= MEDIA QUERIES======= */
