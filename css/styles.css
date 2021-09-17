@@ -556,66 +556,6 @@ a:active {
 }
 /* === PROJECT CARD === */
 
-/* .projects-project-container {
-  position: relative;
-  width: 100%;
-  height: min-content;
-  border-radius: 4px;
-  -webkit-tap-highlight-color: transparent;
-  color: #333;
-  margin-bottom: 3rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-
-.project {
-  background-color: #ecfdef;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  text-decoration: none;
-}
-
-.project-languages {
-  background-color: #fff;
-  color: rgb(121, 120, 120);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  font-size: 0.6rem;
-  height: 10%;
-}
-
-.project-title {
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: #fff;
-  padding: 0.5rem 1rem;
-  max-height: 15%;
-  color: #333;
-}
-
-.project-image {
-  height: 40%;
-  width: 100%;
-}
-
-.project-paragraph {
-  min-height: 35%;
-  padding: 1rem;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  height: min-content;
-  padding: 1rem;
-  text-align: center;
-  background-color: #ecfdef;
-  color: #333;
-} */
-
-
 /* ======= MEDIA QUERIES======= */
 @media(min-width: 600px) {
 
