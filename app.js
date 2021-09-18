@@ -5,15 +5,16 @@ const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
 const listItems = document.querySelectorAll('#list-item');
 
+
+
 window.onscroll = () => { scrollDocumentToTop() };
 
-function scrollDocumentToTop() {
-  if(document.scrollingElement.scrollTop > 200) {
-    toTopBtn.style.visibility = 'visible';
-  } else {
-    toTopBtn.style.visibility = 'hidden';
-  }
-}
+listItems.forEach(item => {
+  item.addEventListener('click', e => {
+    removeCurrenLinkMarking(listItems);
+    item.classList.add('current');
+  });
+});
 
 toTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -24,8 +25,16 @@ showNavbar.addEventListener('click', () => {
   showNavbar.classList.toggle('navbar-open');
 });
 
-console.log('slavenova stranica')
+function scrollDocumentToTop() {
+  if(document.scrollingElement.scrollTop > 200) {
+    toTopBtn.style.visibility = 'visible';
+  } else {
+    toTopBtn.style.visibility = 'hidden';
+  }
+}
 
-listItems.forEach(item => {
-  // unesi logiku za postavljanje trenutnog aktivnog linka
-});
+function removeCurrenLinkMarking(items) {
+  items.forEach(item => {
+    item.classList.remove('current');
+  });
+}
