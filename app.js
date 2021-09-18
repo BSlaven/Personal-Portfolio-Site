@@ -3,6 +3,7 @@ const navbar = document.querySelector('#navbar');
 const container = document.querySelector('.container');
 const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
+const listItems = document.querySelectorAll('#list-item');
 
 window.onscroll = () => { scrollDocumentToTop() };
 
@@ -21,4 +22,10 @@ toTopBtn.addEventListener('click', () => {
 showNavbar.addEventListener('click', () => {
   navbar.classList.toggle('visible-navbar');
   showNavbar.classList.toggle('navbar-open');
+});
+
+console.log('slavenova stranica')
+
+listItems.forEach(item => {
+  // unesi logiku za postavljanje trenutnog aktivnog linka
 });

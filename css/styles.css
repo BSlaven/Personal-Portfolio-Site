@@ -613,14 +613,15 @@ a:active {
   .navbar {
     position: static;
     background-color: inherit;
-    margin-right: 1rem;
+    max-width: 600px;
+    height: 100%;
   }
 
   .nav-list {
     width: 100%;
     padding: 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     height: 100%;
@@ -629,13 +630,22 @@ a:active {
   .list-item {
     margin: 0;
     border: none;
+    border-radius: 0;
     transition: all 0.2s linear;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .list-item.current {
+    background-color: #B6D4E0;
   }
 
   .list-item a {
     color: #002c14;
     letter-spacing: 0;
-    padding: 0.1rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 3px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -775,7 +785,7 @@ a:active {
     text-transform: uppercase;
     align-items: center;
     margin-top: 2rem;
-    color: #555;
+    color: #777;
   }
 
   .project-languages > * {
