@@ -3,27 +3,16 @@ const navbar = document.querySelector('#navbar');
 const container = document.querySelector('.container');
 const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
-const listItems = document.querySelectorAll('#list-item');
+const mainElement = document.querySelector('#main');
+const navListElements = document.querySelectorAll('#list-item');
 
-
+navListElements.forEach(item => {
+  if(item.innerText.toLowerCase() === mainElement.dataset.currentPage) {
+    item.classList.add('current');
+  }
+});
 
 window.onscroll = () => { scrollDocumentToTop() };
-
-listItems.forEach(item => {
-  item.addEventListener('click', e => {
-    removeCurrenLinkMarking(listItems);
-    item.classList.add('current');
-  });
-});
-
-toTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-showNavbar.addEventListener('click', () => {
-  navbar.classList.toggle('visible-navbar');
-  showNavbar.classList.toggle('navbar-open');
-});
 
 function scrollDocumentToTop() {
   if(document.scrollingElement.scrollTop > 200) {
@@ -33,8 +22,11 @@ function scrollDocumentToTop() {
   }
 }
 
-function removeCurrenLinkMarking(items) {
-  items.forEach(item => {
-    item.classList.remove('current');
-  });
-}
+toTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+showNavbar.addEventListener('click', () => {
+  navbar.classList.toggle('visible-navbar');
+  showNavbar.classList.toggle('navbar-open');
+});
