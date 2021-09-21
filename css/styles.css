@@ -166,6 +166,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .main h1 {
@@ -238,8 +239,6 @@ a:active {
 
 /* Footer */
 .footer {
-  position: relative;
-  bottom: 0;
   width: 100%;
   background-color: rgb(0, 20, 0);
   height: 15vh;
@@ -331,7 +330,6 @@ a:active {
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
 }
-
 /* ======= Contact ======= */
 
 .contact-form {
@@ -610,6 +608,10 @@ a:active {
     display: none;
   }
 
+  .main-title:first-of-type {
+    transform: translateX(-5px);
+  }
+
   .navbar {
     position: static;
     background-color: inherit;
@@ -633,9 +635,23 @@ a:active {
     border-radius: 0;
     transition: all 0.2s linear;
     height: 100%;
-    padding: 1rem;
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  .list-item:hover, .list-item:focus-within  {
+    background-color: #B6D4E0;
+  }
+
+  .list-item:focus-within::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #002c14;
   }
 
   .list-item.current {
@@ -645,24 +661,12 @@ a:active {
   .list-item a {
     color: #002c14;
     letter-spacing: 0;
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
+    padding: 0 1rem;
     font-size: 1.1rem;
     font-weight: bold;
+    line-height: 10vh;
   }
-
-  .list-item:focus-within {
-    background-color: transparent;
-  }
-
-  .list-item a:hover, .list-item a:focus {
-    color: #99B49F;
-  }
-
-  .list-item a:active {
-    background-color: #032202;
-  }
-  /* visible navbar */
+/* visible navbar */
 
   .main.landing-page {
     background-image: url('/images/vector-bottom-right-smaller.jpg');
@@ -670,6 +674,7 @@ a:active {
   }
 
   .landing-page {
+    padding-top: 20vh;
     min-height: 85vh;
   }
 
@@ -682,7 +687,7 @@ a:active {
     padding: 9rem 0;
     display: flex;
     gap: 4rem;
-    min-height: 100vh;
+    min-height: 85vh;
   }
 
   .contact-form {
