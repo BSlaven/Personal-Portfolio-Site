@@ -55,7 +55,7 @@ a:active {
 }
 
 .show-navbar {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
   color: #032202;
@@ -108,7 +108,7 @@ a:active {
   text-decoration: none;
   text-transform: uppercase;
   color: #ebfced;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   font-size: 1.5rem;
   font-weight: bold;
   transition: all 0.1s linear;
@@ -154,7 +154,7 @@ a:active {
 }
 
 .main.landing-page {
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .landing-page .container {
@@ -176,11 +176,17 @@ a:active {
   color: #444;
 }
 
+.primary-title span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
 .main-title {
   margin-bottom: 1rem;
   color: rgb(46, 56, 49);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -386,7 +392,8 @@ a:active {
 }
 
 .form-button:focus,.form-button:hover {
-  outline: none;
+  outline: 2px solid #fff;
+  outline-offset: -4px;
   background-color: #0d4436;
   color: #fff;
 }
@@ -479,7 +486,7 @@ a:active {
 
 /* === PROJECT CARD === */
 .project-card {
-  height: 650px;
+  height: min-content;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   perspective: 150rem;
@@ -502,7 +509,7 @@ a:active {
   color: #333;
   padding: 0.5rem 1rem;
   border-radius: 3px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -515,13 +522,13 @@ a:active {
   margin: 1rem;
   margin-top: 2rem;
   text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
   color: #333;
 }
 
 .card-back {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -623,7 +630,7 @@ a:active {
     width: 100%;
     padding: 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     height: 100%;
@@ -635,6 +642,8 @@ a:active {
     border-radius: 0;
     transition: all 0.2s linear;
     height: 100%;
+    padding-right: 0;
+    padding-left: 0;
     display: flex;
     align-items: center;
     position: relative;
@@ -662,7 +671,7 @@ a:active {
     color: #002c14;
     letter-spacing: 0;
     padding: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 10vh;
   }
@@ -671,11 +680,12 @@ a:active {
   .main.landing-page {
     background-image: url('/images/vector-bottom-right-smaller.jpg');
     background-size: cover;
+    min-height: 85vh;
+    padding-top: 0;
   }
 
-  .landing-page {
-    padding-top: 20vh;
-    min-height: 85vh;
+  .primary-title {
+    margin-top: 35vh;
   }
 
   .biografija h1, .biografija p {
@@ -758,9 +768,11 @@ a:active {
 
   .card-body {
     margin-top: 3rem;
+    font-size: 1.2rem;
   }
 
   .card-back {
+    position: absolute;
     width: 100%;
     height: 550px;
     top: 0;
