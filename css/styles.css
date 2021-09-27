@@ -551,7 +551,8 @@ a:active {
 }
 
 .card-back .github-link {
-  background-color: #d7e8d5;
+  /* background-color: #d7e8d5; */
+  background-color: transparent;
   color: #12400b;
   font-weight: bold;
 }
@@ -695,6 +696,7 @@ a:active {
   /* Contact page */
   .contact-main {
     padding: 9rem 0;
+    padding-top: 12rem;
     display: flex;
     gap: 4rem;
     min-height: 85vh;
@@ -737,6 +739,11 @@ a:active {
     font-size: 1.4rem;
   }
   /* Contact page */
+
+  /* projects page */
+  .solo-projects-title {
+    margin-top: 3rem;
+  }
 }
 
 @media(min-width: 1000px) {
@@ -788,7 +795,7 @@ a:active {
   }
 
   .card-back .github-link:hover {
-    background-color: #adbaab;
+    background-color: #d7e8d5;
   }
 
   .card-back .demo-link:hover {
