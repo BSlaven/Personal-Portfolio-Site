@@ -479,7 +479,7 @@ a:active {
   margin-bottom: 5rem;
 }
 
-.solo-projects-title {
+.solo-projects-title, .courses-projects-title {
   color: #222;
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
@@ -741,10 +741,14 @@ a:active {
   /* Contact page */
 
   /* projects page */
-  .solo-projects-title {
+  .solo-projects-title, .courses-projects-title {
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
-}
+
+  .projects {
+    margin-bottom: 8rem;
+  }
 
 @media(min-width: 1000px) {
   .project-card {
