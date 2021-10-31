@@ -552,7 +552,6 @@ a:active {
 }
 
 .card-back .github-link {
-  /* background-color: #d7e8d5; */
   background-color: transparent;
   color: #12400b;
   font-weight: bold;
@@ -561,9 +560,10 @@ a:active {
 .project-languages {
   display: none;
 }
-/* === PROJECT CARD === */
+/* === END OF PROJECT CARD === */
+/* === END OF PROJECTS PAGE === */
 
-/* ======= MEDIA QUERIES======= */
+/* ======= MEDIA QUERIES ======= */
 @media(min-width: 600px) {
 
   .primary-title {
@@ -749,6 +749,7 @@ a:active {
   .projects {
     margin-bottom: 8rem;
   }
+}
 
 @media(min-width: 1000px) {
   .project-card {
