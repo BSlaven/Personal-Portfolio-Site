@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+:root {
+  --main-bg-color: #f9fdf2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +15,7 @@ body {
   font-size: 16px;
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: #f9fdf2;
+  background-color: var(--main-bg-color);
 }
 
 button:focus, a:focus {
@@ -37,7 +41,7 @@ a:active {
 
 .header {
   width: 100%;
-  background-color: #f9fdf2;
+  background-color: var(--main-bg-color);
   height: 10vh;
   position: fixed;
   top: 0;
@@ -150,8 +154,8 @@ a:active {
   margin: 0 auto;
   padding: 9rem 0 0;
   font-size: 1.2rem;
-  color: #111;
-  background: #f9fdf2;
+  color: #333;
+  background: var(--main-bg-color);
 }
 
 .main.landing-page {
@@ -174,7 +178,7 @@ a:active {
   text-align: left;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
-  color: #444;
+  color: #333;
 }
 
 .primary-title span {
@@ -185,7 +189,7 @@ a:active {
 
 .main-title {
   margin-bottom: 1rem;
-  color: rgb(46, 56, 49);
+  color: #022701;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
