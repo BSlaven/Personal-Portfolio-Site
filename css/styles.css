@@ -2,6 +2,8 @@
 
 :root {
   --main-bg-color: #f9fdf2;
+  --dark-grey: #333;
+  --main-dark-green: #022701;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
 }
 
 button:focus, a:focus {
-  outline: 2px solid #333;
+  outline: 2px solid var(--dark-grey);
 }
 
 a:active {
@@ -63,7 +65,7 @@ a:active {
   padding: 0.5rem;
   font-weight: bold;
   cursor: pointer;
-  color: #032202;
+  color: var(--main-dark-green);
   display: inline-block;
   transition: all 0.3s ease-in-out;
   -webkit-tap-highlight-color: transparent;
@@ -154,7 +156,7 @@ a:active {
   margin: 0 auto;
   padding: 9rem 0 0;
   font-size: 1.2rem;
-  color: #333;
+  color: var(--dark-grey);
   background: var(--main-bg-color);
 }
 
@@ -178,7 +180,7 @@ a:active {
   text-align: left;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--dark-grey);
 }
 
 .primary-title span {
@@ -189,7 +191,7 @@ a:active {
 
 .main-title {
   margin-bottom: 1rem;
-  color: #022701;
+  color: var(--main-dark-green);
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
@@ -198,7 +200,7 @@ a:active {
 
 .main-title:last-of-type {
   margin-bottom: 2rem;
-  color: rgb(54, 56, 56);
+  color: var(--dark-grey);
   font-size: 1.1rem;
 }
 
@@ -236,15 +238,15 @@ a:active {
 }
 
 .view-more {
-  background-color: #022701;
-  border: 2px solid #022701;
+  background-color: var(--main-dark-green);
+  border: 2px solid var(--main-dark-green);
   margin-top: 5rem;
   color: #fff;
 }
 
 .contact-me {
-  border: 2px solid #022701;
-  color: #022701;
+  border: 2px solid var(--main-dark-green);
+  color: var(--main-dark-green);
   letter-spacing: 1px;
 }
 
@@ -314,7 +316,7 @@ a:active {
 .stack-title, .interests-title {
   font-size: 1.6rem;
   margin-bottom: 0.8rem;
-  color: #222;
+  color: var(--dark-grey);
 }
 
 .stack .languages, .interests-tech {
@@ -377,7 +379,7 @@ a:active {
 }
 
 .name:focus, .email:focus, .message:focus {
-  border: 2px solid #0d4436;
+  border: 2px solid var(--main-dark-green);
   outline: none;
 }
 
@@ -388,7 +390,7 @@ a:active {
   font-size: 1.3rem;
   text-transform: uppercase;
   border-radius: 5px;
-  color: #eee;
+  color: rgb(199, 185, 185);
   background-color: #1c9275;
   font-weight: bold;
   border: none;
@@ -396,7 +398,7 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
-.form-button:focus,.form-button:hover {
+.form-button:focus, .form-button:hover {
   outline: 2px solid #fff;
   outline-offset: -4px;
   background-color: #0d4436;
@@ -417,7 +419,7 @@ a:active {
 .social {
   text-decoration: none;
   text-align: center;
-  color: #333;
+  color: var(--dark-grey);
   width: 100%;
   font-weight: bold;
   -webkit-tap-highlight-color: transparent;
@@ -484,7 +486,7 @@ a:active {
 }
 
 .solo-projects-title, .courses-projects-title {
-  color: #222;
+  color:var(--dark-grey);
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
 }
@@ -511,7 +513,7 @@ a:active {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  color: #333;
+  color: var(--dark-grey);
   padding: 0.5rem 1rem;
   border-radius: 3px;
   font-size: 1.4rem;
@@ -529,7 +531,7 @@ a:active {
   text-align: center;
   font-size: 1rem;
   line-height: 1.4;
-  color: #333;
+  color: var(--dark-grey);
 }
 
 .card-back {
@@ -545,10 +547,10 @@ a:active {
 .card-back .link {
   width: 200px;
   text-align: center;
-  background-color: #12400b;
+  background-color: var(--main-dark-green);
   color: #fff;;
   padding: 0.5rem 1rem;
-  border: 2px solid #12400b;
+  border: 2px solid var(--main-dark-green);
   border-radius: 150px;
   font-size: 1rem;
   text-decoration: none;
@@ -557,7 +559,7 @@ a:active {
 
 .card-back .github-link {
   background-color: transparent;
-  color: #12400b;
+  color: var(--main-dark-green);
   font-weight: bold;
 }
 
@@ -666,7 +668,7 @@ a:active {
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background-color: #002c14;
+    background-color: var(--main-dark-green);
   }
 
   .list-item.current {
@@ -674,7 +676,7 @@ a:active {
   }
 
   .list-item a {
-    color: #002c14;
+    color: var(--main-dark-green);
     letter-spacing: 0;
     padding: 0 1rem;
     font-size: 1rem;
