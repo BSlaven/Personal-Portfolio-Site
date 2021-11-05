@@ -4,6 +4,7 @@
   --main-bg-color: #f9fdf2;
   --dark-grey: #333;
   --main-dark-green: #022701;
+  --main-accent-green: var(--main-accent-green);
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   min-height: 100vh;
   scroll-behavior: smooth;
   background-color: var(--main-bg-color);
@@ -29,7 +30,7 @@ a:active {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
@@ -122,7 +123,7 @@ a:active {
 }
 
 .list-item:focus-within {
-  background-color:rgb(13, 105, 38);
+  background-color: var(--main-accent-green);
 }
 
 .list-item a:focus {
@@ -132,7 +133,7 @@ a:active {
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
-  background-color: rgb(13, 105, 38);
+  background-color: var(--main-accent-green);
   color: #fff;
   border: none;
   padding: 5px;
