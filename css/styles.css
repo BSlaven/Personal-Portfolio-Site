@@ -4,7 +4,7 @@
   --main-bg-color: #f9fdf2;
   --dark-grey: #333;
   --main-dark-green: #022701;
-  --main-accent-green: var(--main-accent-green);
+  --main-accent-green: rgb(53, 138, 53);
 }
 
 * {
@@ -391,7 +391,7 @@ a:active {
   font-size: 1.3rem;
   text-transform: uppercase;
   border-radius: 5px;
-  color: rgb(199, 185, 185);
+  color: rgb(250, 242, 242);
   background-color: #1c9275;
   font-weight: bold;
   border: none;
