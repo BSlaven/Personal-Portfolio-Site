@@ -5,6 +5,12 @@ const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
 const mainElement = document.querySelector('#main');
 const navListElements = document.querySelectorAll('#list-item');
+const footer = document.querySelector('#footer');
+const thisYear = document.querySelector('#godina')
+
+const currentYear = new Date().getFullYear();
+thisYear.textContent = currentYear;
+
 
 navListElements.forEach(item => {
   if(item.innerText.toLowerCase() === mainElement.dataset.currentPage) {
