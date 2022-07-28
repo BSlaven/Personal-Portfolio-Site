@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 
 :root {
   --main-bg-color: #f9fdf2;
@@ -14,14 +14,15 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   min-height: 100vh;
   scroll-behavior: smooth;
   background-color: var(--main-bg-color);
 }
 
-button:focus, a:focus {
+button:focus,
+a:focus {
   outline: 2px solid var(--dark-grey);
 }
 
@@ -230,7 +231,8 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
-.cta:hover, .cta:focus {
+.cta:hover,
+.cta:focus {
   transform: scale(1.02);
 }
 
@@ -303,7 +305,6 @@ a:active {
   font-size: 20px;
 }
 
-
 /* ========= About ========= */
 .biografija section {
   width: 100%;
@@ -315,13 +316,15 @@ a:active {
   font-size: 2rem;
 }
 
-.stack-title, .interests-title {
+.stack-title,
+.interests-title {
   font-size: 1.6rem;
   margin-bottom: 0.8rem;
   color: var(--dark-grey);
 }
 
-.stack .languages, .interests-tech {
+.stack .languages,
+.interests-tech {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -346,7 +349,6 @@ a:active {
   margin-bottom: 1.2rem;
 }
 
-
 /* ======= Contact ======= */
 .contact-form {
   padding: 1rem;
@@ -355,7 +357,7 @@ a:active {
   width: 100%;
   max-width: 800px;
   font-size: 1.2rem;
-  font-family: 'Montserrat', Arial;
+  font-family: "Montserrat", Arial;
   margin-bottom: 5rem;
 }
 
@@ -369,7 +371,9 @@ a:active {
   font-weight: bold;
 }
 
-.name, .email, .message {
+.name,
+.email,
+.message {
   background-color: #fff;
   width: 100%;
   padding: 0.5rem;
@@ -377,10 +381,12 @@ a:active {
   border-radius: 4px;
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-.name:focus, .email:focus, .message:focus {
+.name:focus,
+.email:focus,
+.message:focus {
   border: 2px solid var(--main-dark-green);
   outline: none;
 }
@@ -400,14 +406,15 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
-.form-button:focus, .form-button:hover {
+.form-button:focus,
+.form-button:hover {
   outline: 2px solid #fff;
   outline-offset: -4px;
   background-color: #0d4436;
   color: #fff;
 }
 
-.social-links {
+.social-links-container {
   width: 100%;
   max-width: 350px;
   margin: 0 auto 5rem;
@@ -445,7 +452,7 @@ a:active {
 }
 
 .social:hover {
-  color:rgb(97, 100, 100);
+  color: rgb(97, 100, 100);
 }
 
 .social-twitter {
@@ -476,7 +483,6 @@ a:active {
 }
 /* end of contact page */
 
-
 /* ======= Projects ======= */
 .projects {
   width: 100%;
@@ -487,8 +493,9 @@ a:active {
   margin-bottom: 5rem;
 }
 
-.solo-projects-title, .courses-projects-title {
-  color:var(--dark-grey);
+.solo-projects-title,
+.courses-projects-title {
+  color: var(--dark-grey);
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
 }
@@ -550,7 +557,7 @@ a:active {
   width: 200px;
   text-align: center;
   background-color: var(--main-dark-green);
-  color: #fff;;
+  color: #fff;
   padding: 0.5rem 1rem;
   border: 2px solid var(--main-dark-green);
   border-radius: 150px;
@@ -572,8 +579,7 @@ a:active {
 /* === END OF PROJECTS PAGE === */
 
 /* ======= MEDIA QUERIES ======= */
-@media(min-width: 600px) {
-
+@media (min-width: 600px) {
   .primary-title {
     margin-top: 4rem;
   }
@@ -595,8 +601,11 @@ a:active {
   }
 }
 
-@media(min-width: 768px) {
-  .primary-title, .main-title, .project-section, .buttons {
+@media (min-width: 768px) {
+  .primary-title,
+  .main-title,
+  .project-section,
+  .buttons {
     align-self: flex-start;
   }
 
@@ -659,12 +668,13 @@ a:active {
     position: relative;
   }
 
-  .list-item:hover, .list-item:focus-within  {
-    background-color: #B6D4E0;
+  .list-item:hover,
+  .list-item:focus-within {
+    background-color: #b6d4e0;
   }
 
   .list-item:focus-within::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -674,7 +684,7 @@ a:active {
   }
 
   .list-item.current {
-    background-color: #B6D4E0;
+    background-color: #b6d4e0;
   }
 
   .list-item a {
@@ -685,10 +695,10 @@ a:active {
     font-weight: bold;
     line-height: 10vh;
   }
-/* visible navbar */
+  /* visible navbar */
 
   .main.landing-page {
-    background-image: url('/images/vector-bottom-right-smaller.jpg');
+    background-image: url("/images/vector-bottom-right-smaller.jpg");
     background-size: cover;
     min-height: 85vh;
     padding-top: 0;
@@ -698,7 +708,8 @@ a:active {
     margin-top: 35vh;
   }
 
-  .biografija h1, .biografija p {
+  .biografija h1,
+  .biografija p {
     max-width: 800px;
   }
 
@@ -720,7 +731,7 @@ a:active {
     margin-bottom: 0;
   }
 
-  .social-links {
+  .social-links-container {
     width: 50%;
     height: min-content;
     display: flex;
@@ -749,7 +760,8 @@ a:active {
   /* Contact page */
 
   /* projects page */
-  .solo-projects-title, .courses-projects-title {
+  .solo-projects-title,
+  .courses-projects-title {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -759,7 +771,7 @@ a:active {
   }
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
   .project-card {
     height: 550px;
     box-shadow: none;

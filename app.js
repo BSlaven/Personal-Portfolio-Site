@@ -4,7 +4,7 @@ const container = document.querySelector('.container');
 const toTopBtn = document.querySelector('#back-to-top');
 const main = document.querySelector('#main');
 const mainElement = document.querySelector('#main');
-const navListElements = document.querySelectorAll('#list-item');
+const navListElements = document.querySelectorAll('#nav-list li');
 const thisYear = document.querySelector('#godina')
 
 const currentYear = new Date().getFullYear();
