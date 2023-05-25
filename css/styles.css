@@ -670,7 +670,7 @@ a:active {
 
   .list-item:hover,
   .list-item:focus-within {
-    background-color: #b6d4e0;
+    background-color: #e3eef3;
   }
 
   .list-item:focus-within::after {
@@ -684,7 +684,7 @@ a:active {
   }
 
   .list-item.current {
-    background-color: #b6d4e0;
+    background-color: #e3eef3;
   }
 
   .list-item a {
