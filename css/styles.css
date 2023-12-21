@@ -668,23 +668,15 @@ a:active {
     position: relative;
   }
 
-  .list-item:hover,
-  .list-item:focus-within {
-    background-color: #e3eef3;
-  }
-
-  .list-item:focus-within::after {
+  .list-item.current::after,
+  .list-item:is(:hover, :focus-within)::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom: 0;
     width: 100%;
     height: 2px;
     background-color: var(--main-dark-green);
-  }
-
-  .list-item.current {
-    background-color: #e3eef3;
   }
 
   .list-item a {
