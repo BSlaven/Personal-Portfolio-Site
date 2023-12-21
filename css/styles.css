@@ -124,10 +124,6 @@ a:active {
   transition: all 0.1s linear;
 }
 
-.list-item:focus-within {
-  background-color: var(--main-accent-green);
-}
-
 .list-item a:focus {
   outline: none;
   -webkit-tap-highlight-color: transparent;
