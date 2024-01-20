@@ -655,7 +655,7 @@ a:active {
     margin: 0;
     border: none;
     border-radius: 0;
-    transition: all 0.2s linear;
+    transition: all 0.25s linear;
     height: 100%;
     padding-right: 0;
     padding-left: 0;
